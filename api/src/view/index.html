@@ -1,0 +1,121 @@
+<html>
+
+<head>
+   <style>
+      @font-face {
+         font-family: "Light";
+         src: url(${_Light}) format('woff2');
+      }
+
+      @font-face {
+         font-family: "Bold";
+         src: url(${_Bold}) format('woff2');
+      }
+
+      @font-face {
+         font-family: "BoldItalic";
+         src: url(${_BoldItalic}) format('woff2');
+      }
+
+      body {
+         width: 1080px;
+         height: 1080px;
+         background: url('../img/certificado.svg');
+         position: relative;
+         font-family: 'ExtraLight' !important;
+      }
+
+      .certificado .content-nombre-reconocido {
+         width: 100%;
+      }
+
+      .certificado .container {
+         width: 100%;
+         text-align: center;
+         position: absolute;
+         top: 720px;
+      }
+
+      .certificado p.mensaje {
+         width: 70%;
+         margin: 0 auto;
+         font-family: "Light";
+         font-size: 18px;
+         text-align: center;
+         color: #595655;
+      }
+
+      .certificado p.nombre-reconocido {
+         width: 100%;
+         margin: 0;
+         font-family: "BoldItalic";
+         font-size: 50px;
+         text-align: center;
+         position: absolute;
+         top: 323px;
+         color: #d2010d;
+      }
+
+      .certificado p.nombre-reconocedor {
+         width: 100%;
+         margin: 0;
+         font-family: "BoldItalic";
+         font-size: 40px;
+         text-align: center;
+         position: absolute;
+         top: 870px;
+         color: #595655;
+      }
+
+      .certificado .certificado-valores {
+         width: 100%;
+         margin: 0 auto;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         position: absolute;
+         top: 500px;
+      }
+
+      .certificado .certificado-valores .imagenValor img {
+         height: 200px;
+         margin: 0 40px;
+      }
+
+      .certificado .certificado-valores .imagenValor p {
+         font-family: "Bold";
+         font-size: 20px;
+         color: var(--color-verde);
+      }
+   </style>
+</head>
+
+<body>
+   <img src="{{dataURI}}" alt="" />
+
+   <div class='certificado' id='certificado'>
+
+      <p class="nombre-reconocido">{{reconocido}}</p>
+
+      <div class="certificado-valores">
+         <div class="imagenValor">
+            <img src={arrValores[0].img_cert} alt="" />
+         </div>
+         <div class="imagenValor">
+            <img src={arrValores[1].img_cert} alt="" />
+         </div>
+         <div class="imagenValor">
+            <img src={arrValores[2].img_cert} alt="" />
+         </div>
+      </div>
+
+      <div class="container">
+         <p class="mensaje">{data.mensaje}</p>
+      </div>
+
+      <p class="nombre-reconocedor">{{reconocedor}}</p>
+
+   </div>
+</body>
+
+</html>

@@ -1,3 +1,7 @@
+*.zip
+
+.htaccess
+
 # Logs
 logs
 *.log

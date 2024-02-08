@@ -1,0 +1,47 @@
+@font-face {
+   font-family: "Regular";
+   src: url('./font/ColgateReady-Regular.ttf');
+}
+
+@font-face {
+   font-family: "ExtraLight";
+   src: url('./font/ColgateReady-ExtraLight.ttf');
+}
+
+@font-face {
+   font-family: "Light";
+   src: url('./font/ColgateReady-Light.ttf');
+}
+
+@font-face {
+   font-family: "Bold";
+   src: url('./font/ColgateReady-Bold.ttf');
+}
+
+@font-face {
+   font-family: "BoldItalic";
+   src: url('./font/ColgateReady-BoldItalic.ttf');
+}
+
+@font-face {
+   font-family: "HeavyItalic";
+   src: url('./font/ColgateReady-HeavyItalic.ttf');
+}
+
+.Informacion,
+.seccionForm,
+.swal2-container {
+   font-family: "Regular";
+}
+
+html,
+body {
+   margin: 0px;
+   padding: 0px;
+}
+
+:root {
+   --color-verde: #870037;
+   --color-verde-claro: #99D7DB;
+   --color-colgate: #D2010D;
+}

@@ -1,0 +1,78 @@
+.certificado {
+   width: 1080px;
+   height: 1080px;
+   background: url('../img/certificado.svg');
+   position: relative;
+   font-family: 'ExtraLight' !important;
+}
+
+.certificado .content-nombre-reconocido {
+   width: 100%;
+}
+
+.certificado .container {
+   width: 100%;
+   text-align: center;
+   position: absolute;
+   top: 720px;
+}
+
+.certificado p.mensaje {
+   width: 70%;
+   margin: 0 auto;
+   font-family: "Light";
+   font-size: 18px;
+   text-align: center;
+   color: #595655;
+}
+
+.certificado p.nombre-reconocido {
+   width: 100%;
+   margin: 0;
+   font-family: "BoldItalic";
+   font-size: 50px;
+   text-align: center;
+   position: absolute;
+   top: 323px;
+   color: #d2010d;
+}
+
+.certificado p.nombre-reconocedor {
+   width: 100%;
+   margin: 0;
+   font-family: "BoldItalic";
+   font-size: 40px;
+   text-align: center;
+   position: absolute;
+   top: 870px;
+   color: #595655;
+}
+
+.certificado .certificado-valores {
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   top: 500px;
+}
+
+.certificado .certificado-valores .imagenValor img {
+   position: relative;
+   height: 200px;
+   margin: 0 40px;
+}
+
+.certificado .certificado-valores .imagenValor p {
+   font-family: "Bold";
+   font-size: 20px;
+   color: var(--color-verde);
+
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto;
+}
