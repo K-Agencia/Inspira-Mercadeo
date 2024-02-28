@@ -5,4 +5,4 @@ export const RoutersLinks = {
 };
 
 export const urlApi = 'https://inspira.mercadeo.col1.co/api';
-// export const urlApi = 'http://localhost:3102';
+// export const urlApi = 'http://192.168.20.46:3102';

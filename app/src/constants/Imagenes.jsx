@@ -30,6 +30,17 @@ import inclusive_sc from "../img/valoresForm/valor_inclusive_sc.svg";
 import iniciativa_digital_sc from "../img/valoresForm/valor_iniciativa_digital_sc.svg";
 import innovacion_sc from "../img/valoresForm/valor_innovacion_sc.svg"
 
+import pasion_certificado from "../img/img_cert/valor_pasion_sc.png";
+import cambio_certificado from "../img/img_cert/valor_cambio_sc.png";
+import caring_certificado from "../img/img_cert/valor_caring_sc.png";
+import claro_y_valiente_certificado from "../img/img_cert/valor_claro_y_valiente_sc.png";
+import curiosidad_certificado from "../img/img_cert/valor_curiosidad_sc.png";
+import empoderamiento_certificado from "../img/img_cert/valor_empoderamiento_sc.png";
+import enfoque_certificado from "../img/img_cert/valor_enfoque_sc.png";
+import inclusive_certificado from "../img/img_cert/valor_inclusive_sc.png";
+import iniciativa_digital_certificado from "../img/img_cert/valor_iniciativa_digital_sc.png";
+import innovacion_certificado from "../img/img_cert/valor_innovacion_sc.png";
+
 export const ImagenesGenerales = {
    circulo_discontinuo,
    circulos_fondo_rojo,
@@ -65,4 +76,17 @@ export const ImgValoresForm = {
    inclusive_sc,
    iniciativa_digital_sc,
    innovacion_sc,
+}
+
+export const Certificado = {
+   pasion_certificado,
+   cambio_certificado,
+   caring_certificado,
+   claro_y_valiente_certificado,
+   curiosidad_certificado,
+   empoderamiento_certificado,
+   enfoque_certificado,
+   inclusive_certificado,
+   iniciativa_digital_certificado,
+   innovacion_certificado,
 }

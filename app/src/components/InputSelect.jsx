@@ -17,7 +17,7 @@ const InputSelect = React.forwardRef(({ name, label, defaultValue, onChange, onB
       {options.map((item, index) => (
         <option key={index} value={item.nombres}>{item.nombres}</option>
       ))}
-    </select>
+    </select><br />
     {error && <span className='error'>{error.message}</span>}
   </div>
 
