@@ -24,15 +24,17 @@ const sendMail = async (req, res, next) => {
    const {
       reconocido,
       reconocedor,
-      correo,
-      urlIMG
+      correo
    } = req.body;
+
+   const imgName = req.file.path;
 
    const transporter = createTransport();
 
    const email = await transporter.sendMail({
       from: "'Colgate Inspira' <colgateinspira@col1.co>",
       to: correo,
+      // to: "programador2.kagencia@gmail.com",
       subject: "¡Felicitaciones! 🥳 Te han reconocido -  Colgate Inspira",
       html: `
          <html>
@@ -45,7 +47,7 @@ const sendMail = async (req, res, next) => {
       attachments: [
          {
             filename: 'Mi reconocimineto.jpg',
-            path: urlIMG
+            path: imgName
          }
       ]
    }, (err, info) => {
@@ -54,6 +56,7 @@ const sendMail = async (req, res, next) => {
       }
       else {
          console.log('enviado');
+         res.send(true)
          next();
       }
    })

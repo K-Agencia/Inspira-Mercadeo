@@ -19,14 +19,15 @@ const selectNombres = (req, res, next) => {
 
 const insertRegistro = (req, res, next) => {
 
+   const data = JSON.parse(req.body.data);
+
    const {
       reconocido,
       valores,
       reconocedor,
       mensaje
-   } = req.body;
+   } = data;
 
-   // reconocido reconocedor valor1 valor2 valor3 mensaje 
    const query = `INSERT INTO reconocimientos_mercadeo (reconocido, reconocedor, valor_1, valor_2, valor_3, description) VALUES (?, ?, ?, ?, ?, ?)`;
 
    pool.getConnection((err, connection) => {
@@ -38,6 +39,7 @@ const insertRegistro = (req, res, next) => {
             next(error);
          } else {
             console.log('insertRegistro');
+            req.body = data;
             next();
          }
          connection.release();
@@ -91,7 +93,7 @@ const seleccionarCorreo = (req, res, next) => {
             next(error);
          } else {
             console.log('seleccionarCorreo');
-            req.body.correo = results[0].correos
+            req.body.correo = results[0].correos;
             next();
          }
          connection.release();

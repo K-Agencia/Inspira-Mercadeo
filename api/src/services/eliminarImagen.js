@@ -3,14 +3,15 @@ const path = require('path');
 
 const eliminarImagen = (req, res, next) => {
 
-   const {
-      nameImagen
-   } = req.body;
+   const imgName = req.file.path;
 
-   fs.rmSync(path.join(__dirname, `../upload/${nameImagen}.jpg`));
-   
-   res.send(true)
-   console.log('Archivo eliminado');
+   try {
+      fs.rmSync(imgName);
+      // res.send(true)
+      console.log('Archivo eliminado');
+   } catch (error) {
+      console.log(error);
+   }
 
 }
 
